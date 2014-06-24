@@ -72,7 +72,7 @@ module BingAdsApi::Helpers
 			hashed_filter = {}
 			filter.each do |key, value|
 				hashed_filter[get_attribute_key(key, keys_case)] = solve_filter_value(key, value)
-			end
+			end if filter
 			return hashed_filter
 		end
 
