@@ -51,6 +51,7 @@ module BingAdsApi
 				:username => options[:username],
 				:password => options[:password],
 				:developer_token => options[:developer_token],
+				:authentication_token => options[:authentication_token],
 				:account_id => options[:account_id],
 				:customer_id => options[:customer_id],
 				:wsdl_url => options[:wdsl] || solve_wsdl_url
