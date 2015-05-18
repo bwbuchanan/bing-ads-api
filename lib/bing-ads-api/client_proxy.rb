@@ -122,8 +122,6 @@ module BingAdsApi
 					soap_header: build_headers
 				}
 				settings.merge(client_settings) if client_settings
-				puts "settings"
-				puts settings
 				return Savon.client(settings)
 			end
 			
