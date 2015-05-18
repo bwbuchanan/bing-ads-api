@@ -72,6 +72,11 @@ module BingAdsApi
 			return accounts
 		end
 
+		def get_customers_info
+			response = call(:get_customers_info)
+			response_hash = get_response_hash(response, __method__)
+		end
+
 
 		private
 			def get_service_name
